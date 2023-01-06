@@ -1,0 +1,13 @@
+
+body{
+  font-family: 'Rajdhani', sans-serif;
+  color: black;
+}
+
+dd{
+  padding-right: 0px;
+}
+
+.spacing{
+  margin-top: -10px;
+}
