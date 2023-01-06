@@ -1,0 +1,180 @@
+.big-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1080px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid black;
+  min-width: 880px;
+  transition: 0.2s;
+}
+
+.top-box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background-image: radial-gradient(farthest-side at 50% 80%, rgba(56, 49, 82, 0.952), rgb(15, 6, 53));
+}
+
+.profile-picture-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -20px;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2.5px rgb(0, 0, 0);
+  z-index: 3;
+}
+
+.profile-picture{
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+}
+
+.bottom-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  flex: 2;
+  width: 100%;
+  background-color: rgb(211, 211, 211);
+  transition: 0.3s;
+}
+
+.bottom-box-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1.2;
+  height: 100%;
+  min-width: 440px;
+  padding-left: 40px;
+}
+
+.the-video{
+  width: 80%;
+  max-width: 700px;
+  height: 340px;
+  border-radius: 40px;
+  border: solid 0px rgb(0, 0, 0);
+  transition: 0.2s;
+  box-shadow: 0px 0px 8px 1px rgb(100, 100, 100);
+}
+
+.the-video:hover{
+  opacity: 80%;
+}
+
+.bottom-box-right{
+  display: grid;
+  grid-template-rows: 1fr 0.3fr 1fr;
+  flex: 1;
+  height: 100%;
+  min-width: 440px;
+}
+
+.button{
+  font-family: rajdhani;
+  width: 300px;
+  height: 70px;
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 30px;
+  border: none;
+  transition: 0.2s;
+  background-color: rgb(221, 221, 221);
+  box-shadow: 0px 0px 4px 1px rgb(100, 100, 100);
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: rgb(180, 180, 180);
+  box-shadow: 0px 0px 4px 1px rgb(100, 100, 100);
+}
+
+.education-box{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-top: 170px;
+  padding-right: 20%;
+}
+.job-experience-box{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20%;
+}
+.skills-box{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 170px;
+  padding-right: 20%;
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .big-box{
+    height: 1280px;
+    min-width: 700px;
+    transition: 0.0s;
+  }
+
+  .profile-picture-container{
+    height: 240px;
+    width: 240px;
+  }
+  
+  .profile-picture{
+    height: 240px;
+    width: 240px;
+  }
+  
+  .bottom-box{
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .bottom-box-left{
+    width: 100%;
+    height: 200px;
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+  
+  .the-video{
+    width: 60%;
+    height: 260px;
+  }
+  
+  .bottom-box-right{
+    height: 500px;
+    width: 100%;
+  }
+  
+  .education-box{
+    padding: 0px 0px 50px 0px;
+  }
+  .job-experience-box{
+    padding: 0px 0px 50px 0px;
+  }
+  .skills-box{
+    padding: 0px 0px 200px 0px;
+  }
+}
+
+
