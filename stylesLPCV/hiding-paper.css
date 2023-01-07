@@ -1,14 +1,15 @@
 .hiding-paper{
   position: fixed;
   overflow-y: auto;
-  top: 80px;
+  top: 40px;
+  bottom: 40px;
+  right: 10%;
+  left: 10%;
   display: none;
   border: 1px solid black;
   border-radius: 40px;
   background-color: white;
-  width: 80%;
   min-width: 400px;
-  height: 80%;
   padding: 20px;
   z-index: 10;
 }
