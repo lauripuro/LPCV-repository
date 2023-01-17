@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Lauri Puro
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesLPCV/general.css">
+    <link rel="stylesheet" href="stylesLPCV/mainpage.css">
+    <link rel="stylesheet" href="stylesLPCV/info-section.css">
+    <link rel="stylesheet" href="stylesLPCV/hiding-paper.css">
+  </head>
+  <body>
+    <div class="big-box">
+
+      <!--Top section-->
+      <div class="top-box">
+        <div class="profile-picture-container">
+            <img class="profile-picture" src="mediaLPCV/profile-picture.jpeg">
+        </div>
+      </div>
+
+
+
+      <!--Middle section-->
+      <div class="middle-box-container">
+        <div class="middle-box">
+          <div class="info-box">
+            <p class="name">
+              Lauri Puro
+            </p>
+          </div>
+          <div class="contact-info-box">
+            <p class="phone-number">
+              <a class="phone-number" href="tel:0449898880">
+                +358 44 9898880
+                <img class="contact-info-box-icon" src="feather/phone.svg">
+              </a>
+            </p>
+            <p class="email">
+              <a class="email" href = "mailto: purolauri@gmail.com">purolauri@gmail.com
+                <img class="contact-info-box-icon" src="feather/mail.svg">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--Bottom section-->
+      <div class="bottom-box">
+        <div class="bottom-box-left">
+          <iframe class="the-video"
+            src="https://www.youtube.com/embed/53EGS21hVY8">
+          </iframe>
+        </div>
+        <div class="bottom-box-right">
+          <div class="education-box"> 
+            <button onclick="education()" class="button">
+              Koulutus
+            </button>
+          </div>
+          <div class="job-experience-box">
+            <button onclick="jobs()" class="button">
+              Työkokemus
+            </button>
+          </div>
+          <div class="skills-box">
+            <button onclick="skills()" class="button">
+              Taidot
+            </button>
+          </div>
+          <i class="fa-thin fa-phone"></i>
+        </div>
+
+        <!--Here are the papers that show up when a button is pressed-->
+        <div id="education-sheet" class="hiding-paper">
+          <div class="hiding-paper-bigbox">
+            <div class="hiding-paper-body">
+
+              <!--Here is all the text that is in education paper-->
+              <dl>
+                <h1>Koulutus</h1>
+                <hr>
+                <h2>Tampereen Yliopisto &nbsp; &nbsp; 9/2020–12/2025</h2>
+                <ol>
+                  <h3>Tuotantotalouden kandidaatti  &nbsp; &nbsp; 12/2023</h3>
+                    <dd class="spacing"><strong>Sivuaineet:</strong> tuotanto ja tuotekehitys, ohjelmistotekniikka</dd>
+                    <dd><strong>Opintoja suoritettu:</strong> 113op/180op</dd>
+                    <dd><strong>Opintojen keskiarvo:</strong> 4,14</dd>
+                  <h3>Tuotantotalouden diplomi-insinööri  &nbsp; &nbsp; 12/2025</h3>
+                </ol>
+                  <p>&nbsp;</p>
+                <hr>
+                <h2>Helsingin luonnontiedelukio &nbsp; &nbsp; 8/2017–6/2020</h2>
+                <ol>
+                  <h3>Ylioppilas &nbsp; &nbsp; 6/2020</h3>
+                  <dd class="spacing"><strong>Ylioppilastutkintotodistus:</strong></dd>
+                  <dd>Äidinkieli	M</dd>
+                  <dd>Pitkä matematiikka L</dd>
+                  <dd>Fysiikka	L</dd>
+                  <dd>Kemia L</dd>
+                  <dd>Englanti	C</dd>
+                  <dd>Biologia	M</dd>
+                </ol>
+                  <p>&nbsp;</p>
+                <hr>
+              </dl>
+            </div>
+            <div class="x-button-box">
+              <button onclick="education()" class="x-button">
+                <img src="feather/x.svg">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="job-experience-sheet" class="hiding-paper">
+          <div class="hiding-paper-bigbox">
+            <div class="hiding-paper-body">
+
+              <!--Here is everything that is in work experience paper-->
+              <dl>
+                <h1>Työkokemus</h1>
+                <hr>
+                <h2>Messilä Golf &nbsp; &nbsp; 4/2022–10/2022</h2>
+                <h3>Caddiemaster</h3>
+                <dd>Caddiemasterin työtehtäviin kuului golfkentän ajanvarauksien hoitamista, 
+                  pelioikeuksien ja jäsenyyksien hallintaa, kilpailujen organisointia 
+                  sekä asiakkaiden neuvontaa ja opastusta.  </dd>
+                  <p>&nbsp;</p>
+                <hr>
+                <h2>Varusmiespalvelus &nbsp; &nbsp; 7/2021–6/2022</h2>
+                <h3>Apukouluttaja</h3>
+                <dd>Apukouluttajana pääsi kouluttamaan ja ohjaamaan noin kuuttakymmentä 
+                  nuoremman saapumiserän varusmiestä. Tehtävässä pääsi suunnittelemaan ja 
+                  toteuttamaan koulutuksia sekä esiintymään jatkuvasti suurille joukoille.</dd>
+                  <p>&nbsp;</p>
+                <hr>
+                <h2>Messilä Golf &nbsp; &nbsp; 4/2020–9/2020</h2>
+                <h3>Caddiemaster ja kenttätyöntekijä</h3>
+                <dd>Työtehtäviin kuului erilaisia asiakaspalvelutehtäviä sekä golfkentän ylläpitotöitä.</dd>
+                <p>&nbsp;</p>
+                <hr>
+                <h2>Shell Mikkola &nbsp; &nbsp; 6/2019–10/2019</h2>
+                <h3>Huoltoasematyöntekijä</h3>
+                <dd>Huoltoasematyöntekjän keskeisimpiä työtehtäviä olivat kaikenlainen asiakaspalvelu, suoramyynti, 
+                  rahastus ja kassojen lasku sekä ruoan valmistus. </dd>
+                  <p>&nbsp;</p>
+                <hr>
+              </dl>
+            </div>
+            <div class="x-button-box">
+              <button onclick="jobs()" class="x-button">
+                <img src="feather/x.svg">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="skills-sheet" class="hiding-paper">
+          <div class="hiding-paper-bigbox">
+            <div class="hiding-paper-body">
+
+              <!--Here is everything that is in skills paper-->
+              <dl>
+                <h1>Taidot</h1>
+                <hr>
+                <h2>Kielitaidot</h2>
+                <ol>
+                  <h4>Suomi ––– Äidinkieli</h4>
+                  <h4>Englanti ––– C1</h4>
+                  <h4>Ruotsi ––– B1</h4>
+                </ol>
+                <p>&nbsp;</p>
+                <hr>
+                <h2>IT-taidot</h2>
+                <ol>
+                  <h4>Excel/Sheets ––– Erinomainen</h4>
+                  <h4>Word/Docs ––– Erinomainen</h4>
+                  <h4>PowerPoint/Slides ––– Hyvä</h4>
+                </ol>
+                <p>&nbsp;</p>
+                <hr>
+                <h2>Ohjelmointitaidot</h2>
+                <ol>
+                  <h4>Python ––– Perustaidot</h4>
+                  <h4>MatLab ––– Perustaidot</h4>
+                  <h4>HTML ja CSS ––– Perustaidot</h4>
+                  <h4>JavaScript ––– Alkeet</h4>
+                </ol>
+                <p>&nbsp;</p>
+                <hr>
+                <h2>Todistukset</h2>
+                <ol>
+                  <h4>B ajokortti</h4>
+                  <h4>A1 ajokortti</h4>
+                  <h4>Hygieniapassi</h4>
+                </ol>
+                <p>&nbsp;</p>
+                <hr>
+              </dl>
+            </div>
+            <div class="x-button-box">
+              <button onclick="skills()" class="x-button">
+                <img src="feather/x.svg">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--These pieces of code make the hiding paper show up of disappear when button is pressed-->
+    <script>
+      function education() {
+        var myDiv = document.getElementById('education-sheet')
+        if (myDiv.style.display === "block") {
+          myDiv.style.display = "none"
+        } else {
+          myDiv.style.display = "block"
+        }
+      }
+
+      function jobs() {
+        var myDiv = document.getElementById('job-experience-sheet')
+        if (myDiv.style.display === "block") {
+          myDiv.style.display = "none"
+        } else {
+          myDiv.style.display = "block"
+        }
+      }
+
+      function skills() {
+        var myDiv = document.getElementById('skills-sheet')
+        if (myDiv.style.display === "block") {
+          myDiv.style.display = "none"
+        } else {
+          myDiv.style.display = "block"
+        }
+      }
+
+    </script>
+  </body>
+  <script src="jsLPCV/LPCV.js"></script>
+</html>
